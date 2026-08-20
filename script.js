@@ -18,7 +18,11 @@ const observer = new IntersectionObserver((entries)=>{
     }
   });
 }, {threshold:0.15});
-document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+document.querySelectorAll('.fade-up').forEach(el=>{
+  const siblings = Array.from(el.parentElement.children).filter(c=>c.classList.contains('fade-up'));
+  el.style.setProperty('--index', siblings.indexOf(el));
+  observer.observe(el);
+});
 
 // to-top button
 const totop = document.getElementById('totop');
