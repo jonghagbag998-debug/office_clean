@@ -85,21 +85,16 @@
   }
   .logo{
     display:flex;
-    align-items:baseline;
-    gap:8px;
-    font-family:'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight:700;
-    font-size:22px;
-    color:var(--ink);
+    align-items:center;
+    flex:0 0 auto;
   }
-  .logo span{
-    width:9px; height:9px;
-    border-radius:50%;
-    background:var(--teal);
-    display:inline-block;
-    margin-right:2px;
-    box-shadow:0 0 0 4px var(--teal-pale);
+  .logo img{
+    width:174px;
+    height:auto;
+    max-height:46px;
+    object-fit:contain;
   }
+  .logo-c{ color:var(--teal-deep); }
   nav.main-nav{
     display:flex;
     gap:6px;
@@ -673,9 +668,11 @@
     font-family:'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size:19px;
     color:var(--white);
-    font-weight:700;
+    font-weight:800;
+    letter-spacing:-0.03em;
     margin-bottom:10px;
   }
+  .footer-logo .logo-c{ color:var(--sky); }
   .footer-info{ font-size:12.8px; line-height:2; }
   .footer-links{ display:flex; gap:20px; }
   .footer-links a{ font-size:13px; }
