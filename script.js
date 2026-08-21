@@ -32,3 +32,21 @@ if(totop){
   });
   totop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
 }
+
+// subtle hero background parallax
+const motionReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const parallaxHeroes = document.querySelectorAll('.hero, .page-hero');
+if(!motionReduced && parallaxHeroes.length){
+  let parallaxFrame = null;
+  const updateHeroBackgrounds = ()=>{
+    parallaxHeroes.forEach(hero=>{
+      const shift = Math.max(-24, Math.min(24, -hero.getBoundingClientRect().top * 0.055));
+      hero.style.setProperty('--bg-shift-y', `${shift.toFixed(1)}px`);
+    });
+    parallaxFrame = null;
+  };
+  window.addEventListener('scroll', ()=>{
+    if(parallaxFrame === null) parallaxFrame = requestAnimationFrame(updateHeroBackgrounds);
+  }, {passive:true});
+  updateHeroBackgrounds();
+}
