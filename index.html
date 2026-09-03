@@ -24,9 +24,9 @@
       <a href="#why" class="nav-link">회사 소개</a>
     </nav>
     <div class="header-cta">
-      <a href="tel:010-0000-0000" class="tel-mini">
+      <a href="tel:010-7286-3740" class="tel-mini">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        010-0000-0000
+        010-7286-3740
       </a>
       <a href="#contact" class="btn btn-primary btn-sm"><span class="long">상담 신청</span><span class="short">문의</span></a>
     </div>
@@ -44,7 +44,7 @@
         <p class="hero-sub">매일 드나드는 공간을, 눈에 보이는 차이로 관리해 드립니다.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-amber">무료 견적 받기</a>
-          <a href="tel:010-0000-0000" class="btn btn-outline">전화 상담 010-0000-0000</a>
+          <a href="tel:010-7286-3740" class="btn btn-outline">전화 상담 010-7286-3740</a>
         </div>
       </div>
 
@@ -259,19 +259,22 @@
 
       <div class="contact-grid">
         <form class="form-card fade-up" id="quoteForm">
+          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="맑은공간 홈페이지 문의">
+          <input type="hidden" name="from_name" value="맑은공간 홈페이지">
           <div class="field-row">
             <div class="field">
               <label for="name">이름</label>
-              <input type="text" id="name" placeholder="홍길동" required>
+              <input type="text" id="name" name="name" placeholder="홍길동" required>
             </div>
             <div class="field">
               <label for="phone">연락처</label>
-              <input type="tel" id="phone" placeholder="010-0000-0000" required>
+              <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required>
             </div>
           </div>
           <div class="field">
             <label for="space">공간 종류</label>
-            <select id="space">
+            <select id="space" name="space">
               <option>사무실</option>
               <option>상가</option>
               <option>병원</option>
@@ -281,16 +284,16 @@
           </div>
           <div class="field">
             <label for="msg">문의 내용</label>
-            <textarea id="msg" placeholder="공간 크기, 희망 청소 주기, 방문 가능한 날짜 등을 남겨주세요."></textarea>
+            <textarea id="msg" name="message" placeholder="공간 크기, 희망 청소 주기, 방문 가능한 날짜 등을 남겨주세요."></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">문의 보내기</button>
-          <p class="form-note">※ 예시 페이지의 문의 폼입니다. 실제 운영 시 접수 기능을 연결해 드립니다.</p>
+          <p class="form-note" id="formNote">문의 남겨주시면 확인 후 순차적으로 연락드립니다.</p>
         </form>
 
         <div class="info-card fade-up">
           <div class="info-row">
             <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="#CDEAF9" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div><h5>전화 문의</h5><p>010-0000-0000</p></div>
+            <div><h5>전화 문의</h5><p>010-7286-3740</p></div>
           </div>
           <div class="info-row">
             <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="#CDEAF9" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -302,7 +305,7 @@
           </div>
           <div class="info-row">
             <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="#CDEAF9" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div><h5>주소</h5><p>추후 입력 예정</p></div>
+            <div><h5>주소</h5><p>서울특별시 서초구 서초대로30길 19-11 2층</p></div>
           </div>
         </div>
       </div>
@@ -317,9 +320,9 @@
       <div>
         <div class="footer-logo"><span class="logo-o">맑은</span><span class="logo-c">공간</span></div>
         <div class="footer-info">
-          상호명: 맑은공간(수정 예정) &nbsp;|&nbsp; 대표: 홍길동(예시)<br>
-          사업자등록번호: 000-00-00000(예시) &nbsp;|&nbsp; 주소: 추후 입력 예정<br>
-          전화: 010-0000-0000 &nbsp;|&nbsp; 이메일: contact@example.com
+          상호명: 맑은공간 &nbsp;|&nbsp; 대표: 박용기<br>
+          사업자등록번호: 659-11-02728 &nbsp;|&nbsp; 주소: 서울특별시 서초구 서초대로30길 19-11 2층<br>
+          전화: 010-7286-3740 &nbsp;|&nbsp; 이메일: parkyoki@hanmail.net
         </div>
       </div>
       <div class="footer-links">
@@ -329,7 +332,7 @@
         <a href="#contact">문의</a>
       </div>
     </div>
-    <p class="copyright">© 2026 맑은공간. All rights reserved. (예시 페이지)</p>
+    <p class="copyright">© 2026 맑은공간. All rights reserved.</p>
   </div>
 </footer>
 
@@ -339,11 +342,35 @@
 
 <script src="script.js"></script>
 <script>
-  // form (demo only)
+  // form submission via Web3Forms (free) -> emails parkyoki@hanmail.net
   document.getElementById('quoteForm').addEventListener('submit', function(e){
     e.preventDefault();
-    alert('문의가 접수되었습니다. (예시 페이지이며 실제 접수는 되지 않습니다)');
-    this.reset();
+    const form = this;
+    const note = document.getElementById('formNote');
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = '전송 중...';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+      .then(res => res.json())
+      .then(result => {
+        if (result.success) {
+          note.textContent = '문의가 접수되었습니다. 빠르게 연락드리겠습니다.';
+          form.reset();
+        } else {
+          note.textContent = '전송에 실패했습니다. 전화로 문의해주세요: 010-7286-3740';
+        }
+      })
+      .catch(() => {
+        note.textContent = '전송에 실패했습니다. 전화로 문의해주세요: 010-7286-3740';
+      })
+      .finally(() => {
+        btn.disabled = false;
+        btn.textContent = '문의 보내기';
+      });
   });
 </script>
 
