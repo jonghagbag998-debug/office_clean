@@ -24,6 +24,22 @@ document.querySelectorAll('.fade-up').forEach(el=>{
   observer.observe(el);
 });
 
+// mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+if(navToggle && mainNav){
+  navToggle.addEventListener('click', ()=>{
+    const open = mainNav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  mainNav.querySelectorAll('a').forEach(link=>{
+    link.addEventListener('click', ()=>{
+      mainNav.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
 // to-top button
 const totop = document.getElementById('totop');
 if(totop){
