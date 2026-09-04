@@ -16,7 +16,7 @@
 <meta name="theme-color" content="#145E8C">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -50,7 +50,12 @@
 <main id="top">
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
+  <section class="hero hero--video">
+    <div class="page-hero-video-bg">
+      <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+        <source src="videos/main-hero.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="wrap hero-grid">
       <div>
         <span class="eyebrow">사무실 · 상업공간 청소 전문</span>
@@ -60,24 +65,6 @@
           <a href="#contact" class="btn btn-amber">무료 견적 받기</a>
           <a href="tel:010-7286-3740" class="btn btn-outline">전화 상담 010-7286-3740</a>
         </div>
-      </div>
-
-      <div class="brand-mark">
-        <svg class="clean-illustration" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="정돈된 사무실 빌딩 일러스트">
-          <path class="soft-fill" d="M56 248V154a12 12 0 0 1 12-12h58v106H56Z"/>
-          <path class="primary-fill" d="M126 248V102l54-38 54 38v146H126Z"/>
-          <path class="accent-fill" d="M180 64v184h54V102L180 64Z"/>
-          <g class="window-grid">
-            <rect x="145" y="106" width="14" height="14" rx="2"/><rect x="170" y="106" width="14" height="14" rx="2"/>
-            <rect x="145" y="132" width="14" height="14" rx="2"/><rect x="170" y="132" width="14" height="14" rx="2"/>
-            <rect x="145" y="158" width="14" height="14" rx="2"/><rect x="170" y="158" width="14" height="14" rx="2"/>
-          </g>
-          <g class="detail-stroke">
-            <path d="M74 169h34M74 190h34M74 211h34"/>
-            <path d="M50 258h220"/>
-          </g>
-          <path class="primary-stroke" d="M38 272h244"/>
-        </svg>
       </div>
     </div>
   </section>
