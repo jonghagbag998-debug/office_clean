@@ -533,6 +533,14 @@
   }
 
   /* ---------- Testimonials ---------- */
+  .reviews-empty{
+    border:1px dashed var(--line);
+    border-radius:8px;
+    padding:56px 24px;
+    text-align:center;
+    color:var(--ink-faint);
+    font-size:14.5px;
+  }
   .quote-grid{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
