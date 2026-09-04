@@ -869,6 +869,7 @@
     box-shadow:var(--shadow);
   }
   .page-hero-visual svg{ width:100%; height:100%; }
+  .page-hero-visual video{ width:100%; height:100%; object-fit:cover; border-radius:14px; display:block; }
 
   .feature-list{
     display:grid;
