@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xn--s39awrt22abqn.com/sitemap.xml
