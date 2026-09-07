@@ -225,7 +225,7 @@
   }
   .hero--video{ margin-top:0; padding:0; }
   .hero--video::before{ display:none; }
-  .hero--video .hero-grid{ grid-template-columns:1fr; padding:120px 0; }
+  .hero--video .hero-grid{ grid-template-columns:1fr; padding-top:120px; padding-bottom:120px; }
   .hero--video .eyebrow{
     color:var(--white);
     background:rgba(0,0,0,0.32);
@@ -253,7 +253,7 @@
   /* bright variant: light overlay, dark ink text */
   .hero--video-light{ margin-top:0; padding:0; }
   .hero--video-light::before{ display:none; }
-  .hero--video-light .hero-grid{ grid-template-columns:1fr; padding:120px 0; }
+  .hero--video-light .hero-grid{ grid-template-columns:1fr; padding-top:120px; padding-bottom:120px; }
   .hero--video-light .page-hero-video-bg::after{
     background:
       linear-gradient(180deg, transparent 60%, rgba(255,255,255,0.8) 100%),
