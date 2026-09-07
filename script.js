@@ -24,6 +24,17 @@ document.querySelectorAll('.fade-up').forEach(el=>{
   observer.observe(el);
 });
 
+// pause any playing hero video the instant a real navigation link is
+// clicked, so an actively-decoding autoplay video doesn't compete with
+// the browser for the main thread and delay the page transition
+document.querySelectorAll('a[href]').forEach(link=>{
+  const href = link.getAttribute('href');
+  if(!href || href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+  link.addEventListener('click', ()=>{
+    document.querySelectorAll('video').forEach(v=> v.pause());
+  });
+});
+
 // mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
